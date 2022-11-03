@@ -1,0 +1,31 @@
+let products = [
+ {product: "Gummy Worms", price: 5.79},
+ {product: "Plain M&Ms", price: 2.89},
+ {product: "Peanut M&Ms", price: 2.89},
+ {product: "Swedish Fish", price: 3.79},
+ // TODO: fill the array with 10 candies of various
+ // price ranges
+];
+
+
+for (i = 0; i < products.length; i++){
+    if (Number(products[i].price) <= 4.0) {
+        console.log("One of the  Candies that cost less than $4 is :" + products[i].product)
+  }
+}
+
+
+for (i = 0; i < products.length; i++){
+    let M = (products[i].product) .indexOf("M&Ms");
+    if (M > 0) {
+        console.log("The M&M's candies are :" + products[i].product)
+  }
+}
+
+
+
+for (i = 0; i < products.length; i++){
+    if (products[i].product == "Swedish Fish") {
+        console.log("Yes, we carry Swedish Fish" )
+  }
+}
